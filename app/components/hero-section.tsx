@@ -63,11 +63,7 @@ export function HeroSection() {
 
             <AnimationContainer animation="fadeUp" delay={3}>
               <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-                <AnimatedButton href="/auth/register" />
-                {/* <button className="flex w-full items-center justify-center gap-3 rounded-full bg-primary px-10 py-5 text-lg font-black text-primary-foreground shadow-2xl shadow-primary/30 transition-transform hover:scale-105 sm:w-auto">
-                  GARANTIR MINHA VAGA
-                  <Rocket className="h-5 w-5" />
-                </button> */}
+                <AnimatedButton href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0" />
                 <div className="flex flex-col">
                   <span className="flex items-center gap-2 font-bold text-foreground">
                     <CalendarDays className="h-4 w-4 text-primary" />
