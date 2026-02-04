@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import AnimationContainer from "@/components/globals/animate";
 
 const faqs = [
   {
@@ -65,35 +66,42 @@ export function FAQ() {
   return (
     <section className="py-20 bg-secondary/30">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <Badge
-            variant="outline"
-            className="border-primary/50 text-primary mb-4"
-          >
-            Dúvidas
-          </Badge>
-          <h2 className="text-3xl sm:text-4xl font-bold text-balance mb-4">
-            Perguntas <span className="text-primary">frequentes</span>
-          </h2>
-          <p className="text-muted-foreground">
-            Tire suas dúvidas sobre o evento e garanta sua participação
-          </p>
-        </div>
+        <AnimationContainer animation="fadeUp" delay={0}>
+          <div className="text-center mb-12">
+            <Badge
+              variant="outline"
+              className="border-primary/50 text-primary mb-4"
+            >
+              Dúvidas
+            </Badge>
+            <h2 className="text-3xl sm:text-4xl font-bold text-balance mb-4">
+              Perguntas <span className="text-primary">frequentes</span>
+            </h2>
+            <p className="text-muted-foreground">
+              Tire suas dúvidas sobre o evento e garanta sua participação
+            </p>
+          </div>
+        </AnimationContainer>
 
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem
+            <AnimationContainer
               key={index}
-              value={`item-${index}`}
-              className="bg-card border border-border rounded-2xl px-6 data-[state=open]:border-primary/50 transition-colors"
+              animation="fadeUp"
+              delay={index * 0.1}
             >
-              <AccordionTrigger className="text-left font-semibold hover:text-primary hover:no-underline py-5">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
+              <AccordionItem
+                value={`item-${index}`}
+                className="bg-card border border-border rounded-2xl px-6 data-[state=open]:border-primary/50 transition-colors"
+              >
+                <AccordionTrigger className="text-left font-semibold hover:text-primary hover:no-underline py-5">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            </AnimationContainer>
           ))}
         </Accordion>
       </div>
