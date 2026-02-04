@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import AnimationContainer from "@/components/globals/animate";
+import Wrapper from "@/components/globals/wrapper";
 
 const faqs = [
   {
@@ -40,32 +41,13 @@ const faqs = [
     answer:
       "Você sai com clareza, direção, estratégia, visão de negócios e um plano de ação aplicável. Nada de conteúdo genérico ou motivacional vazio.",
   },
-  {
-    question: "Quem são os palestrantes?",
-    answer:
-      "Já temos especialistas confirmados e convidados especiais que serão revelados em breve. A proposta é entregar conteúdo de alto nível, com quem vive o que ensina.",
-  },
-  {
-    question: "As vagas são limitadas?",
-    answer:
-      "Sim. Por se tratar de um evento presencial e de alta imersão, as vagas são limitadas e podem se esgotar a qualquer momento.",
-  },
-  {
-    question: "Como funciona a inscrição?",
-    answer:
-      "A inscrição é feita diretamente nesta página. Após a confirmação do pagamento, você receberá todas as informações por e-mail e WhatsApp.",
-  },
-  {
-    question: "Ainda estou em dúvida. Posso falar com alguém?",
-    answer:
-      "Claro. Nosso time está disponível para te ajudar a entender se essa formação faz sentido para o seu momento. Clique no botão de contato nesta página para falar com o time comercial.",
-  },
 ];
 
 export function FAQ() {
   return (
-    <section className="py-20 bg-secondary/30">
-      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-24 bg-secondary/30 scroll-mt-28">
+      <Wrapper>
+        <div className="mx-auto max-w-3xl">
         <AnimationContainer animation="fadeUp" delay={0}>
           <div className="text-center mb-12">
             <Badge
@@ -104,7 +86,8 @@ export function FAQ() {
             </AnimationContainer>
           ))}
         </Accordion>
-      </div>
+        </div>
+      </Wrapper>
     </section>
   );
 }

@@ -1,13 +1,29 @@
-import { EventGallery } from "./components/event-gallery";
+import { AboutSection } from "./components/about-section";
+import { BenefitsSection } from "./components/benefits-section";
+import { FinalCtaSection } from "./components/final-cta-section";
+import { HeroSection } from "./components/hero-section";
+import { LocationSection } from "./components/location-section";
+import { MentorsSection } from "./components/mentors-section";
 import { FAQ } from "./components/faq";
+import { ScheduleSection } from "./components/schedule-section";
+import { SiteFooter } from "./components/site-footer";
+import { SiteHeader } from "./components/site-header";
 import { UrgencyBanner } from "./components/urgency-banner";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background text-foreground">
       <UrgencyBanner />
-      {/* <EventGallery /> */}
+      <SiteHeader />
+      <HeroSection />
+      <AboutSection />
+      <BenefitsSection />
+      <MentorsSection />
+      <ScheduleSection />
       <FAQ />
+      <LocationSection />
+      <FinalCtaSection />
+      <SiteFooter />
     </main>
   );
 }
