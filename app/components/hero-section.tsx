@@ -2,6 +2,7 @@
 
 import AnimationContainer from "@/components/globals/animate";
 import Wrapper from "@/components/globals/wrapper";
+import { AnimatedButton } from "@/components/ui/animate-button";
 import { CalendarDays, MapPin, Rocket, Users } from "lucide-react";
 
 const heroHighlights = [
@@ -62,10 +63,11 @@ export function HeroSection() {
 
             <AnimationContainer animation="fadeUp" delay={3}>
               <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-                <button className="flex w-full items-center justify-center gap-3 rounded-full bg-primary px-10 py-5 text-lg font-black text-primary-foreground shadow-2xl shadow-primary/30 transition-transform hover:scale-105 sm:w-auto">
+                <AnimatedButton href="/auth/register" />
+                {/* <button className="flex w-full items-center justify-center gap-3 rounded-full bg-primary px-10 py-5 text-lg font-black text-primary-foreground shadow-2xl shadow-primary/30 transition-transform hover:scale-105 sm:w-auto">
                   GARANTIR MINHA VAGA
                   <Rocket className="h-5 w-5" />
-                </button>
+                </button> */}
                 <div className="flex flex-col">
                   <span className="flex items-center gap-2 font-bold text-foreground">
                     <CalendarDays className="h-4 w-4 text-primary" />
