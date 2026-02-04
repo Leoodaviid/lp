@@ -81,7 +81,7 @@ export function AnimatedButton({
         href={href}
         onMouseEnter={() => iconRef.current?.startAnimation()}
         onMouseLeave={() => iconRef.current?.stopAnimation()}
-        className={`glow2 relative z-[5] flex h-auto w-auto items-center justify-center gap-3 overflow-hidden rounded-full border-[3px] border-white bg-[#D1D1D1] px-[40px] py-1 text-lg font-medium transition-[2s] ${
+        className={`glow2 relative z-5 flex h-auto w-full items-center justify-center gap-3 overflow-hidden rounded-full border-[3px] border-white bg-[#D1D1D1] px-12 py-6 text-xl font-black transition-[2s] md:w-auto ${
           isHovering ? "hovering" : ""
         }`}
         style={
@@ -90,7 +90,7 @@ export function AnimatedButton({
           } as CSSProperties
         }
       >
-        <span className="z-[5] flex items-center self-center whitespace-nowrap text-black">
+        <span className="z-5 flex items-center self-center whitespace-nowrap text-black">
           Garantir minha vaga
           <RocketIcon ref={iconRef} className="ml-2 mt-1 size-4" />
         </span>

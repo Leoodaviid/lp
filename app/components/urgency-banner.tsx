@@ -34,7 +34,7 @@ export function UrgencyBanner() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[60] bg-primary py-2 px-4">
+    <div className="fixed top-0 left-0 right-0 z-60 bg-primary py-2 px-4">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-primary-foreground text-sm font-medium">
         <div className="flex items-center gap-2">
           <Flame className="w-4 h-4 animate-pulse" />

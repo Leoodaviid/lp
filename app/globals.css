@@ -105,8 +105,8 @@
   background: linear-gradient(
     to right,
     transparent 30%,
-    #ff7037 80%,
-    #ff4900 95%
+    #d4af37 80%,
+    #b8860b 95%
   );
   width: 108%;
   height: 125%;
@@ -127,8 +127,8 @@
   background: linear-gradient(
     to left,
     transparent 30%,
-    #ff7037 80%,
-    #ff4900 95%
+    #d4af37 80%,
+    #b8860b 95%
   );
   width: 108%;
   height: 125%;
@@ -146,10 +146,10 @@
 .glow2::before {
   background-image: radial-gradient(
     43.3% 44.23% at 50% 49.51%,
-    #fffff7 29%,
-    #fffacd 48.5%,
-    #f4d2bf 60.71%,
-    #f4d2bf00 100%
+    #fff6d5 29%,
+    #f4e3a1 48.5%,
+    #d4af374d 60.71%,
+    #d4af3700 100%
   );
   filter: blur(5px);
   width: 300px;

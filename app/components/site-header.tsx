@@ -34,16 +34,21 @@ export function SiteHeader() {
         <div className="flex items-center gap-4">
           <a
             className="hidden items-center gap-2 text-sm font-bold text-muted-foreground transition-colors hover:text-primary lg:flex"
-            href="https://wa.me/yournumber"
+            href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0"
             target="_blank"
             rel="noreferrer"
           >
             <Headset className="h-4 w-4" />
             Dúvidas?
           </a>
-          <button className="rounded-full bg-primary px-6 py-2.5 text-sm font-extrabold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:brightness-110">
+          <a
+            href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-primary px-6 py-2.5 text-sm font-extrabold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:brightness-110"
+          >
             GARANTIR VAGA
-          </button>
+          </a>
         </div>
       </Wrapper>
     </header>

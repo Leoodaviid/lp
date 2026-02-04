@@ -58,7 +58,14 @@ export function LocationSection() {
                 </div>
               </div>
               <button className="w-full rounded-xl bg-primary/10 py-3 text-sm font-bold text-primary transition-colors hover:bg-primary/20">
-                Ver no Google Maps
+                <a
+                  href="https://www.google.com/maps/place/Plataforma+Global/@-23.5017683,-46.8568335,17z/data=!3m1!4b1!4m6!3m5!1s0x94cf03574526e13d:0xf2f1fedafd4dd9bd!8m2!3d-23.5017683!4d-46.8568335!16s%2Fg%2F11ww9mp78t?entry=ttu&g_ep=EgoyMDI2MDIwMS4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block w-full"
+                >
+                  Ver no Google Maps
+                </a>
               </button>
             </div>
           </div>

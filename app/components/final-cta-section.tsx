@@ -2,7 +2,8 @@
 
 import AnimationContainer from "@/components/globals/animate";
 import Wrapper from "@/components/globals/wrapper";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { AnimatedButton } from "@/components/ui/animate-button";
 
 export function FinalCtaSection() {
   return (
@@ -28,14 +29,16 @@ export function FinalCtaSection() {
           </AnimationContainer>
           <AnimationContainer animation="fadeUp" delay={2}>
             <div className="flex flex-col items-center justify-center gap-6 md:flex-row">
-              <button className="flex w-full items-center justify-center gap-3 rounded-full bg-primary px-12 py-6 text-xl font-black text-primary-foreground shadow-2xl shadow-primary/40 transition-transform hover:scale-105 md:w-auto">
-                GARANTIR MINHA VAGA
-                <ArrowRight className="h-6 w-6" />
-              </button>
-              <button className="flex w-full items-center justify-center gap-3 rounded-full border border-border bg-card/20 px-10 py-6 text-lg font-bold text-foreground transition-colors hover:bg-card/40 md:w-auto">
+              <AnimatedButton href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0" />
+              <a
+                href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+                className="flex w-full items-center justify-center gap-3 rounded-full border border-border bg-card/20 px-10 py-6 text-lg font-bold text-foreground transition-colors hover:bg-card/40 md:w-auto"
+              >
                 <MessageCircle className="h-5 w-5" />
                 FALAR COM CONSULTOR
-              </button>
+              </a>
             </div>
           </AnimationContainer>
           <AnimationContainer animation="fadeUp" delay={3}>
