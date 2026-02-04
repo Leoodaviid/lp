@@ -5,6 +5,8 @@ import { HeroSection } from "./components/hero-section";
 import { LocationSection } from "./components/location-section";
 import { MentorsSection } from "./components/mentors-section";
 import { FAQ } from "./components/faq";
+import { DifferentialsSection } from "./components/differentials-section";
+import { SolutionSection } from "./components/solution-section";
 import { ScheduleSection } from "./components/schedule-section";
 import { SiteFooter } from "./components/site-footer";
 import { SiteHeader } from "./components/site-header";
@@ -17,9 +19,11 @@ export default function Home() {
       <SiteHeader />
       <HeroSection />
       <AboutSection />
+      <SolutionSection />
       <BenefitsSection />
       <MentorsSection />
       <ScheduleSection />
+      <DifferentialsSection />
       <FAQ />
       <LocationSection />
       <FinalCtaSection />

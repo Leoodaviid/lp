@@ -2,32 +2,44 @@
 
 import AnimationContainer from "@/components/globals/animate";
 import Wrapper from "@/components/globals/wrapper";
-import { TrendingDown, ShieldCheck, UserX, ClipboardList } from "lucide-react";
+import {
+  TrendingDown,
+  UserSquare2,
+  ClipboardList,
+  TrendingUp,
+  Award,
+} from "lucide-react";
 
 const painPoints = [
   {
-    title: "Faturamento abaixo do esperado",
+    title: "Trabalha muito, mas o faturamento não acompanha",
     description:
-      "Cansado de trabalhar muito e não ver o retorno financeiro que sua dedicação merece.",
+      "Sua agenda está cheia, mas a receita não cresce no mesmo ritmo.",
     icon: TrendingDown,
   },
   {
-    title: "Falta de autoridade no mercado",
+    title: "Ainda depende apenas de atendimento individual",
     description:
-      "Dificuldade em ser reconhecido como especialista e referência na sua região.",
-    icon: ShieldCheck,
+      "Sem escala, o seu teto de ganhos fica limitado pelo seu tempo.",
+    icon: UserSquare2,
   },
   {
-    title: "Dificuldade em escalar",
+    title: "Não tem uma metodologia autoral clara",
     description:
-      "Sua agenda está lotada, mas seu lucro estagnado. Você precisa de um modelo de negócio.",
-    icon: UserX,
-  },
-  {
-    title: "Ausência de um método",
-    description:
-      "Sentir que está apagando incêndio todos os dias sem um processo de vendas claro.",
+      "Sem processo, fica difícil vender valor e criar consistência.",
     icon: ClipboardList,
+  },
+  {
+    title: "Vê outros nutris crescendo no digital enquanto você fica estagnada",
+    description:
+      "A sensação é de correr muito e não sair do lugar.",
+    icon: TrendingUp,
+  },
+  {
+    title: "Quer ser reconhecida como referência, mas não sabe como se posicionar",
+    description:
+      "Falta clareza para construir autoridade e atrair o público certo.",
+    icon: Award,
   },
 ];
 
@@ -38,16 +50,15 @@ export function AboutSection() {
         <AnimationContainer animation="fadeUp" delay={0}>
           <div className="mx-auto mb-16 max-w-3xl text-center">
             <h2 className="mb-6 text-4xl font-black text-foreground lg:text-5xl">
-              Este evento é para você?
+              Se você é nutricionista e sente que:
             </h2>
             <p className="text-lg text-muted-foreground">
-              Se você se identifica com algum destes pontos, você está perdendo
-              dinheiro por não estar aqui.
+              Essa formação foi criada exatamente para você.
             </p>
           </div>
         </AnimationContainer>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-5">
           {painPoints.map((item, index) => {
             const Icon = item.icon;
             return (

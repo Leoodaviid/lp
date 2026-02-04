@@ -5,62 +5,89 @@ import Wrapper from "@/components/globals/wrapper";
 
 const schedule = [
   {
-    label: "DIA 01",
+    label: "DAY 1",
     date: "10 de Abril",
     items: [
       {
         time: "08:30",
-        title: "Credenciamento & Welcome Coffee",
-        description:
-          "Inicie sua jornada com networking de alto nível e café gourmet.",
+        title: "Abertura Oficial",
+        description: "Boas-vindas e contexto da imersão.",
       },
       {
-        time: "09:30",
-        title: "Abertura: O Novo Mercado",
-        description:
-          "As grandes janelas de oportunidade para nutricionistas em 2024 e 2025.",
+        time: "09:10",
+        title: "Método Autoral – Cybelle Monteiro",
+        description: "Estruturação do método e posicionamento inicial.",
       },
       {
-        time: "11:00",
-        title: "Branding de Autoridade",
-        description:
-          "Construindo um posicionamento que elimina a concorrência por preço.",
+        time: "10:20",
+        title: "Construção de Comunidade – Thaísa Leal",
+        description: "Audiência qualificada e engajamento real.",
       },
       {
-        time: "14:00",
-        title: "Método de Vendas High Ticket",
-        description:
-          "Como vender programas de 4, 5 ou 10 mil reais com naturalidade.",
+        time: "12:00",
+        title: "Almoço",
+        description: "Pausa para networking e recarga.",
+      },
+      {
+        time: "13:30",
+        title: "Escalando seu Faturamento – Mateus Cortez",
+        description: "Estratégias para crescer com previsibilidade.",
+      },
+      {
+        time: "15:00",
+        title: "Aluna Profissional Mentory",
+        description: "Caso real e insights práticos.",
+      },
+      {
+        time: "16:00",
+        title: "Intervalo",
+        description: "Pausa rápida para café.",
+      },
+      {
+        time: "16:30",
+        title: "Posicionamento de Marca – Cybelle Monteiro",
+        description: "Marca autoral e diferenciação no mercado.",
       },
     ],
   },
   {
-    label: "DIA 02",
+    label: "DAY 2",
     date: "11 de Abril",
     items: [
       {
         time: "09:00",
-        title: "Tráfego & Escala Digital",
-        description:
-          "Como atrair leads qualificados todos os dias para seu WhatsApp.",
+        title: "Posicionamento de Marca Autoral – Cybelle Monteiro",
+        description: "Clareza de mensagem e percepção de valor.",
       },
       {
-        time: "11:00",
-        title: "Operação & Equipes",
-        description:
-          "Saindo do operacional e construindo uma equipe que vende para você.",
+        time: "10:10",
+        title: "Mentalidade Nutri Expert – Mateus Cortez",
+        description: "Crescimento, decisão e liderança.",
       },
       {
-        time: "14:30",
-        title: "Workshop: Plano 50K",
-        description:
-          "Desenhando seu próprio plano de ação personalizado para os próximos 90 dias.",
+        time: "12:00",
+        title: "Almoço",
+        description: "Pausa para networking e recarga.",
       },
       {
-        time: "17:00",
-        title: "Encerramento & Coquetel",
-        description:
-          "Momento de selar parcerias e celebrar o novo nível do seu negócio.",
+        time: "13:30",
+        title: "Se Tornando Referência na Nutrição – Palestrante Convidada (a revelar)",
+        description: "Autoridade e posicionamento no mercado.",
+      },
+      {
+        time: "15:00",
+        title: "Nutri Digital – Mateus Cortez",
+        description: "Produtos, ofertas e presença digital.",
+      },
+      {
+        time: "16:00",
+        title: "Intervalo",
+        description: "Pausa rápida para café.",
+      },
+      {
+        time: "16:30",
+        title: "Plano Nutri 50K – Cybelle Monteiro",
+        description: "Plano prático para atingir 50k/mês.",
       },
     ],
   },

@@ -48,44 +48,38 @@ export function FAQ() {
     <section id="faq" className="py-24 bg-secondary/30 scroll-mt-28">
       <Wrapper>
         <div className="mx-auto max-w-3xl">
-        <AnimationContainer animation="fadeUp" delay={0}>
-          <div className="text-center mb-12">
-            <Badge
-              variant="outline"
-              className="border-primary/50 text-primary mb-4"
-            >
-              Dúvidas
-            </Badge>
-            <h2 className="text-3xl sm:text-4xl font-bold text-balance mb-4">
-              Perguntas <span className="text-primary">frequentes</span>
-            </h2>
-            <p className="text-muted-foreground">
-              Tire suas dúvidas sobre o evento e garanta sua participação
-            </p>
-          </div>
-        </AnimationContainer>
+          <AnimationContainer animation="fadeUp" delay={0}>
+            <div className="text-center mb-12">
+              <h2 className="mb-4 text-4xl font-black text-foreground lg:text-5xl">
+                Perguntas <span className="text-primary">frequentes</span>
+              </h2>
+              <p className="text-muted-foreground">
+                Tire suas dúvidas sobre o evento e garanta sua participação
+              </p>
+            </div>
+          </AnimationContainer>
 
-        <Accordion type="single" collapsible className="space-y-4">
-          {faqs.map((faq, index) => (
-            <AnimationContainer
-              key={index}
-              animation="fadeUp"
-              delay={index * 0.1}
-            >
-              <AccordionItem
-                value={`item-${index}`}
-                className="bg-card border border-border rounded-2xl px-6 data-[state=open]:border-primary/50 transition-colors"
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqs.map((faq, index) => (
+              <AnimationContainer
+                key={index}
+                animation="fadeUp"
+                delay={index * 0.1}
               >
-                <AccordionTrigger className="text-left font-semibold hover:text-primary hover:no-underline py-5">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            </AnimationContainer>
-          ))}
-        </Accordion>
+                <AccordionItem
+                  value={`item-${index}`}
+                  className="bg-card border border-border rounded-2xl px-6 data-[state=open]:border-primary/50 transition-colors"
+                >
+                  <AccordionTrigger className="text-left font-semibold hover:text-primary hover:no-underline py-5">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              </AnimationContainer>
+            ))}
+          </Accordion>
         </div>
       </Wrapper>
     </section>

@@ -2,32 +2,65 @@
 
 import AnimationContainer from "@/components/globals/animate";
 import Wrapper from "@/components/globals/wrapper";
-import { Compass, BadgeCheck, Users, CreditCard } from "lucide-react";
+import {
+  TrendingUp,
+  ClipboardList,
+  Laptop,
+  Users,
+  Sparkles,
+  Target,
+  Award,
+  BrainCircuit,
+} from "lucide-react";
 
 const pillars = [
   {
-    title: "Metodologia 10X",
+    title: "Escalar seu faturamento de forma estratégica",
     description:
-      "O passo a passo estratégico para transformar seu consultório tradicional em um ecossistema de lucro.",
-    icon: Compass,
+      "Organize processos, oferta e conversão para crescer com previsibilidade.",
+    icon: TrendingUp,
   },
   {
-    title: "Branding Premium",
+    title: "Construir uma metodologia nutricional autoral",
     description:
-      "Como construir uma marca magnética que atrai clientes dispostos a pagar pelo seu valor, não pelo preço.",
-    icon: BadgeCheck,
+      "Crie um método único que aumenta valor percebido e resultados.",
+    icon: ClipboardList,
   },
   {
-    title: "Comunidade Expert",
+    title: "Se tornar Nutri Digital, criando produtos que vendem",
     description:
-      "Ambiente propício para networking com profissionais que estão no mesmo nível de ambição que você.",
+      "Estruture programas escaláveis e desejados pelo seu público.",
+    icon: Laptop,
+  },
+  {
+    title: "Construção de comunidade e audiência qualificada",
+    description:
+      "Atraia e retenha pessoas que compram e indicam seu trabalho.",
     icon: Users,
   },
   {
-    title: "Plano 50K",
+    title: "Posicionamento de marca autoral",
     description:
-      "A rota matemática e operacional clara para atingir e sustentar os 50 mil reais de faturamento mensal.",
-    icon: CreditCard,
+      "Destaque-se no mercado com identidade, narrativa e valor claro.",
+    icon: Sparkles,
+  },
+  {
+    title: "Metodologia Nutri Expert – Plano Nutri 50K",
+    description:
+      "Estratégia prática para alcançar e sustentar faturamento mensal.",
+    icon: Target,
+  },
+  {
+    title: "Como se tornar referência na Nutrição",
+    description:
+      "Construa autoridade com conteúdo, prova e consistência.",
+    icon: Award,
+  },
+  {
+    title: "Mentalidade Nutri Expert (crescimento, decisão e liderança)",
+    description:
+      "Postura de liderança para decisões rápidas e alta performance.",
+    icon: BrainCircuit,
   },
 ];
 
@@ -39,11 +72,11 @@ export function BenefitsSection() {
           <AnimationContainer animation="fadeUp" delay={0}>
             <div className="max-w-2xl">
               <h2 className="mb-6 text-4xl font-black text-foreground lg:text-5xl">
-                O que você vai dominar
+                O que você vai aprender
               </h2>
               <p className="text-lg text-muted-foreground">
-                Os 4 pilares fundamentais para transformar sua carreira em um
-                negócio de alto ticket.
+                Conteúdos estratégicos para transformar sua carreira em um
+                negócio de alto valor.
               </p>
             </div>
           </AnimationContainer>
