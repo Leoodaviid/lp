@@ -16,7 +16,7 @@ export function SiteHeader() {
     <header className="fixed top-16 md:top-10 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <Wrapper className="flex h-16 items-center justify-between">
         <div className="flex items-center gap-8">
-          <h2 className="text-xs md:text-xl font-black tracking-tight text-foreground">
+          <h2 className="text-base md:text-xl font-thin tracking-tight text-foreground">
             NUTRI EXPERT <span className="text-primary">EXPERIENCE</span> SP
           </h2>
           <nav className="hidden items-center gap-8 md:flex">

@@ -14,7 +14,7 @@ export function FinalCtaSection() {
         <div>
           <AnimationContainer animation="fadeUp" delay={0}>
             <div className="mx-auto max-w-4xl text-center sm:ml-auto sm:mr-0 sm:text-right">
-              <h2 className="mb-8 text-4xl font-black leading-tight tracking-tight text-foreground sm:w-full sm:text-5xl lg:text-6xl">
+              <h2 className="mb-8 text-4xl font-thin leading-tight tracking-tight text-foreground sm:w-full sm:text-5xl lg:text-6xl">
                 Você está a uma{" "}
                 <span className="relative inline-block">
                   <span className="text-primary">decisão</span>

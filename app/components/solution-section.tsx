@@ -72,7 +72,7 @@ export function SolutionSection() {
           <div className="flex-1 space-y-10">
             <div className="space-y-6 text-center sm:text-left">
               <AnimationContainer delay={0.2}>
-                <h2 className="text-4xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+                <h2 className="text-4xl font-thin leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
                   A FORMAÇÃO <br />
                   NUTRI EXPERT <br />
                   <span className="text-primary">EXPERIENCE</span> SP
@@ -92,7 +92,7 @@ export function SolutionSection() {
 
             {/* Differentials */}
             <AnimationContainer delay={0.4}>
-              <div className="flex flex-wrap justify-center md:justify-start gap-4 -mb-4">
+              <div className="flex flex-col justify-center items-center md:justify-start md:items-start gap-4 -mb-4">
                 {differentials.map((item, index) => (
                   <p
                     key={index}
@@ -118,7 +118,7 @@ export function SolutionSection() {
                 className="mt-4"
               >
                 <AnimatedButton
-                  title="Quero minha vaga agora"
+                  title="QUERO MINHA VAGA AGORA"
                   href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0"
                 />
               </AnimationContainer>

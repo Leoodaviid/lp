@@ -160,7 +160,7 @@ const galleryItems = [
 
 export function EventGallery() {
   const [active, setActive] = useState<(typeof galleryItems)[number] | null>(
-    null
+    null,
   );
   const ref = useRef<HTMLDivElement>(null);
   const id = useId();
@@ -266,7 +266,7 @@ export function EventGallery() {
         <Wrapper>
           <AnimationContainer animation="fadeUp" delay={0}>
             <div className="mb-6 text-center sm:text-right">
-              <h2 className="text-4xl font-black leading-tight tracking-tight text-foreground sm:w-full sm:text-5xl lg:text-6xl">
+              <h2 className="text-4xl font-thin leading-tight tracking-tight text-foreground sm:w-full sm:text-5xl lg:text-6xl">
                 <span className="relative inline-block">
                   <span className="text-primary">Momentos</span>
                   <svg

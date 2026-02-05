@@ -50,7 +50,7 @@ export function AboutSection() {
       <Wrapper>
         <AnimationContainer animation="fadeUp" delay={0}>
           <div className="mx-auto mb-16 max-w-3xl text-center sm:ml-auto sm:mr-0 sm:text-right">
-            <h2 className="mb-6 text-4xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            <h2 className="mb-6 text-4xl font-thin leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Se você é{" "}
               <span className="relative inline-block">
                 <span className="text-primary">nutricionista</span>

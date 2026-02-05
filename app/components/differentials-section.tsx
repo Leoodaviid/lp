@@ -70,7 +70,7 @@ export function DifferentialsSection() {
         {/* Header */}
         <AnimationContainer delay={0.1}>
           <div className="mx-auto mb-16 max-w-4xl text-center md:mb-24 sm:mx-0 sm:text-left">
-            <h2 className="mb-6 text-4xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            <h2 className="mb-6 text-4xl font-thin leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Por que essa formação é{" "}
               <span className="relative inline-block">
                 <span className="text-primary">diferente</span>
@@ -245,7 +245,7 @@ export function DifferentialsSection() {
                 <div className="flex justify-center">
                   {" "}
                   <AnimatedButton
-                    title="Quero ser um Nutri Expert"
+                    title="QUERO SER UM NUTRI EXPERT"
                     href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0"
                   />
                 </div>

@@ -29,7 +29,7 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           <AnimationContainer animation="fadeUp" delay={0}>
             <div className="md:col-span-2">
-              <h3 className="mb-6 text-2xl font-black tracking-tight text-foreground">
+              <h3 className="mb-6 text-2xl font-thin tracking-tight text-foreground font-display">
                 NUTRI EXPERT <span className="text-primary">EXPERIENCE</span> SP
               </h3>
               <p className="mb-8 max-w-sm text-muted-foreground">

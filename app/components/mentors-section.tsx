@@ -35,7 +35,7 @@ export function MentorsSection() {
       <Wrapper>
         <AnimationContainer animation="fadeUp" delay={0}>
           <div className="mx-auto mb-12 max-w-3xl text-center md:mb-16 sm:mx-0 sm:text-left">
-            <h2 className="text-4xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            <h2 className="text-4xl font-thin leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Mentores da sua{" "}
               <span className="relative inline-block">
                 <span className="text-primary">jornada</span>

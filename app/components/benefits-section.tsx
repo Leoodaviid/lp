@@ -74,7 +74,7 @@ export function BenefitsSection() {
             </AnimationContainer>
             <AnimationContainer animation="fadeUp" delay={0}>
               <div className="mx-auto max-w-2xl text-center sm:ml-auto sm:mr-0 sm:text-right">
-                <h2 className="mb-6 text-4xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+                <h2 className="mb-6 text-4xl font-thin leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
                   O que você vai{" "}
                   <span className="relative inline-block">
                     <span className="text-primary">aprender</span>

@@ -49,7 +49,7 @@ export function FAQ() {
       <Wrapper>
         <AnimationContainer animation="fadeUp" delay={0}>
           <div className="mb-6 text-center sm:text-left">
-            <h2 className="text-4xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+            <h2 className="text-4xl font-thin leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Perguntas{" "}
               <span className="relative inline-block">
                 <span className="text-primary">frequentes</span>

@@ -10,7 +10,7 @@ interface AnimatedButtonProps {
 
 export function AnimatedButton({
   href = "/auth/register",
-  title = "Garantir minha vaga",
+  title = "GARANTIR MINHA VAGA",
 }: AnimatedButtonProps) {
   const glow1Ref = useRef<HTMLDivElement>(null);
   const glow2Ref = useRef<HTMLElement | null>(null);
@@ -38,7 +38,7 @@ export function AnimatedButton({
     glow1.style.setProperty("--before-opacity", mousePercentage.toFixed(2));
     glow1.style.setProperty(
       "--after-opacity",
-      (1 - mousePercentage).toFixed(2)
+      (1 - mousePercentage).toFixed(2),
     );
 
     const buttonRect = glow2Button.getBoundingClientRect();
@@ -88,7 +88,7 @@ export function AnimatedButton({
       >
         <span className="z-5 flex items-center self-center whitespace-nowrap text-black">
           {title}
-          <ArrowRight className="ml-2 mt-1 size-4" />
+          <ArrowRight className="ml-2 size-6" />
         </span>
       </Link>
     </div>

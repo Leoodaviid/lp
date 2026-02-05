@@ -47,7 +47,7 @@ export function HeroSection() {
             </AnimationContainer>
 
             <AnimationContainer animation="fadeUp" delay={1}>
-              <h1 className="text-4xl font-black leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-7xl">
+              <h1 className="text-4xl font-thin leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-7xl">
                 FORMAÇÃO <br />
                 NUTRI EXPERT <br />
                 <span className="text-primary">EXPERIENCE</span> SP
