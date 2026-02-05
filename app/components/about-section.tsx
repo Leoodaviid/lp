@@ -85,7 +85,7 @@ export function AboutSection() {
               >
                 <div className="flex h-full flex-col gap-4 rounded-2xl border border-border bg-card/50 p-8 transition-colors hover:border-primary/50">
                   <Icon className="h-10 w-10 text-primary" />
-                  <h3 className="text-xl font-bold text-foreground">
+                  <h3 className="text-lg font-bold text-foreground">
                     {item.title}
                   </h3>
                   <p className="text-sm text-muted-foreground">
