@@ -46,7 +46,7 @@ export function HeroSection() {
               </div>
             </AnimationContainer>
 
-            <AnimationContainer animation="fadeUp" delay={1}>
+            <AnimationContainer animation="fadeUp" delay={0.1}>
               <h1 className="text-4xl font-thin leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-7xl">
                 FORMAÇÃO <br />
                 NUTRI EXPERT <br />
@@ -54,14 +54,14 @@ export function HeroSection() {
               </h1>
             </AnimationContainer>
 
-            <AnimationContainer animation="fadeUp" delay={2}>
+            <AnimationContainer animation="fadeUp" delay={0.2}>
               <p className="max-w-xl text-lg font-medium leading-relaxed text-muted-foreground lg:text-xl">
                 O evento que vai escalar seu faturamento, posicionar sua marca e
                 te levar ao próximo nível na Nutrição.
               </p>
             </AnimationContainer>
 
-            <AnimationContainer animation="fadeUp" delay={3}>
+            <AnimationContainer animation="fadeUp" delay={0.3}>
               <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
                 <AnimatedButton href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0" />
                 <div className="flex flex-col">
@@ -78,7 +78,7 @@ export function HeroSection() {
           </div>
 
           <div className="hidden items-center justify-end md:flex">
-            <AnimationContainer animation="fadeLeft" delay={2}>
+            <AnimationContainer animation="fadeLeft" delay={0.2}>
               <div className="w-full max-w-sm rounded-3xl border border-border bg-card/80 p-8 shadow-2xl backdrop-blur">
                 <div className="mb-8 flex items-center justify-between">
                   <span className="text-sm font-bold uppercase tracking-[0.25em] text-primary">

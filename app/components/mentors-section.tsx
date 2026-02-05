@@ -33,7 +33,7 @@ export function MentorsSection() {
   return (
     <section id="mentors" className="bg-background py-20 scroll-mt-28">
       <Wrapper>
-        <AnimationContainer animation="fadeUp" delay={0}>
+          <AnimationContainer animation="fadeUp" delay={0}>
           <div className="mx-auto mb-12 max-w-3xl text-center md:mb-16 sm:mx-0 sm:text-left">
             <h2 className="text-4xl font-thin leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Mentores da sua{" "}
@@ -60,11 +60,11 @@ export function MentorsSection() {
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           {mentors.map((mentor, index) => (
-            <AnimationContainer
-              key={mentor.name}
-              animation="fadeUp"
-              delay={index * 0.2}
-            >
+              <AnimationContainer
+                key={mentor.name}
+                animation="fadeUp"
+                delay={0.1 + index * 0.08}
+              >
               <div className="flex flex-col items-center text-center">
                 {mentor.image ? (
                   <div className="relative mb-8 h-64 w-64 overflow-hidden rounded-3xl ring-8 ring-primary/10 shadow-2xl">

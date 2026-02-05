@@ -67,7 +67,7 @@ export function BenefitsSection() {
       <Wrapper>
         <div className="mb-16 space-y-6">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-            <AnimationContainer animation="fadeLeft" delay={1}>
+            <AnimationContainer animation="fadeLeft" delay={0.15}>
               <div className="hidden text-7xl font-black text-primary/20 lg:block">
                 CORE
               </div>
@@ -97,7 +97,7 @@ export function BenefitsSection() {
               </div>
             </AnimationContainer>
           </div>
-          <AnimationContainer animation="fadeUp" delay={0.2}>
+          <AnimationContainer animation="fadeUp" delay={0.1}>
             <p className="mx-auto max-w-2xl text-center text-lg leading-relaxed text-muted-foreground sm:text-xl">
               Conteúdos estratégicos para transformar sua carreira em um negócio
               de alto valor.
@@ -112,7 +112,7 @@ export function BenefitsSection() {
               <AnimationContainer
                 key={pillar.title}
                 animation="fadeUp"
-                delay={index * 0.2}
+                delay={0.1 + index * 0.08}
               >
                 <div className="group h-full rounded-3xl border border-border bg-card p-10 shadow-xl shadow-black/10 transition-transform hover:-translate-y-2">
                   <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 transition-colors group-hover:bg-primary">

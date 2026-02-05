@@ -128,7 +128,7 @@ export function ScheduleSection() {
             <AnimationContainer
               key={day.label}
               animation="fadeUp"
-              delay={index * 0.3}
+              delay={0.1 + index * 0.12}
               className="h-full"
             >
               <div className="h-full rounded-[2.5rem] border border-border bg-card p-8 shadow-xl lg:p-12">
@@ -145,7 +145,7 @@ export function ScheduleSection() {
                     <AnimationContainer
                       key={item.time}
                       animation="fadeUp"
-                      delay={0.15 + itemIndex * 0.08}
+                      delay={0.2 + itemIndex * 0.06}
                     >
                       <div className="group flex gap-6">
                         <div className="pt-1 text-xl font-black text-primary transition-transform group-hover:scale-110">

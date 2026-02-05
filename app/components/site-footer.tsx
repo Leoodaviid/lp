@@ -60,7 +60,7 @@ export function SiteFooter() {
             </div>
           </AnimationContainer>
 
-          <AnimationContainer animation="fadeUp" delay={1}>
+          <AnimationContainer animation="fadeUp" delay={0.1}>
             <div>
               <h4 className="mb-6 font-bold text-primary">Links Rápidos</h4>
               <ul className="space-y-4 text-sm text-muted-foreground">
@@ -75,7 +75,7 @@ export function SiteFooter() {
             </div>
           </AnimationContainer>
 
-          <AnimationContainer animation="fadeUp" delay={2}>
+          <AnimationContainer animation="fadeUp" delay={0.2}>
             <div>
               <h4 className="mb-6 font-bold text-primary">Suporte</h4>
               <ul className="space-y-4 text-sm text-muted-foreground">

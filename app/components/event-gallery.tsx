@@ -300,7 +300,7 @@ export function EventGallery() {
               <AnimationContainer
                 key={index}
                 animation="scaleUp"
-                delay={index * 0.15}
+                delay={0.1 + index * 0.08}
               >
                 <motion.div layoutId={`card-${item.title}-${id}`}>
                   <BentoGridItem

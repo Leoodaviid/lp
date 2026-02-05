@@ -38,14 +38,14 @@ export function FinalCtaSection() {
             </div>
           </AnimationContainer>
           <div className="mx-auto max-w-4xl text-center">
-            <AnimationContainer animation="fadeUp" delay={1}>
+          <AnimationContainer animation="fadeUp" delay={0.1}>
               <p className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
                 As vagas para a imersão presencial são limitadas para garantir
                 que cada mentorado tenha atenção e a experiência seja
                 transformadora.
               </p>
             </AnimationContainer>
-            <AnimationContainer animation="fadeUp" delay={2}>
+            <AnimationContainer animation="fadeUp" delay={0.2}>
               <div className="flex flex-col items-center justify-center gap-6 md:flex-row">
                 <AnimatedButton href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0" />
                 <a
@@ -59,7 +59,7 @@ export function FinalCtaSection() {
                 </a>
               </div>
             </AnimationContainer>
-            <AnimationContainer animation="fadeUp" delay={3}>
+            <AnimationContainer animation="fadeUp" delay={0.3}>
               <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <span className="h-2 w-2 rounded-full bg-primary" />

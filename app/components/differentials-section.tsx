@@ -68,7 +68,7 @@ export function DifferentialsSection() {
     <section className="relative overflow-hidden bg-background py-20 md:py-32">
       <Wrapper className="relative z-10">
         {/* Header */}
-        <AnimationContainer delay={0.1}>
+        <AnimationContainer delay={0}>
           <div className="mx-auto mb-16 max-w-4xl text-center md:mb-24 sm:mx-0 sm:text-left">
             <h2 className="mb-6 text-4xl font-thin leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Por que essa formação é{" "}
@@ -214,7 +214,7 @@ export function DifferentialsSection() {
         </div>
 
         {/* Bottom CTA */}
-        <AnimationContainer delay={0.8}>
+        <AnimationContainer delay={0.2}>
           <div className="mt-20 md:mt-24">
             <div className="relative max-w-3xl mx-auto">
               {/* Glow background */}

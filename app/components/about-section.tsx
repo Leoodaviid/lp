@@ -81,7 +81,7 @@ export function AboutSection() {
               <AnimationContainer
                 key={item.title}
                 animation="fadeUp"
-                delay={index * 0.2}
+                delay={0.1 + index * 0.08}
               >
                 <div className="flex h-full flex-col gap-4 rounded-2xl border border-border bg-card/50 p-8 transition-colors hover:border-primary/50">
                   <Icon className="h-10 w-10 text-primary" />

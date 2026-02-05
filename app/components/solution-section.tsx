@@ -71,7 +71,7 @@ export function SolutionSection() {
           {/* Left Column - Content */}
           <div className="flex-1 space-y-10">
             <div className="space-y-6 text-center sm:text-left">
-              <AnimationContainer delay={0.2}>
+              <AnimationContainer delay={0}>
                 <h2 className="text-4xl font-thin leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
                   A FORMAÇÃO <br />
                   NUTRI EXPERT <br />
@@ -79,7 +79,7 @@ export function SolutionSection() {
                 </h2>
               </AnimationContainer>
 
-              <AnimationContainer delay={0.3}>
+              <AnimationContainer delay={0.1}>
                 <p className="mx-auto max-w-lg text-lg leading-relaxed text-muted-foreground sm:mx-0 sm:text-xl">
                   Foi feita para você! Um evento{" "}
                   <span className="font-semibold text-foreground">
@@ -91,7 +91,7 @@ export function SolutionSection() {
             </div>
 
             {/* Differentials */}
-            <AnimationContainer delay={0.4}>
+            <AnimationContainer delay={0.2}>
               <div className="flex flex-col justify-center items-center md:justify-start md:items-start gap-4 -mb-4">
                 {differentials.map((item, index) => (
                   <p
@@ -106,7 +106,7 @@ export function SolutionSection() {
 
             <div className="flex flex-col items-center gap-2 text-center sm:items-start sm:text-left">
               {formationHighlights.map((item, index) => (
-                <AnimationContainer key={item} delay={0.5 + index * 0.12}>
+                <AnimationContainer key={item} delay={0.3 + index * 0.08}>
                   <p className="text-2xl font-semibold text-primary leading-tight">
                     {item}
                     {index < formationHighlights.length - 1 ? " +" : ""}
@@ -114,7 +114,7 @@ export function SolutionSection() {
                 </AnimationContainer>
               ))}
               <AnimationContainer
-                delay={0.5 + formationHighlights.length * 0.12}
+                delay={0.3 + formationHighlights.length * 0.08}
                 className="mt-4"
               >
                 <AnimatedButton
@@ -127,7 +127,7 @@ export function SolutionSection() {
 
           {/* Right Column - Outcomes Card */}
           <div className="w-full lg:w-[520px] relative">
-            <AnimationContainer delay={0.3}>
+            <AnimationContainer delay={0.1}>
               <div className="relative">
                 {/* Card glow */}
                 <div className="absolute -inset-1 rounded-[32px] bg-gradient-to-b from-primary/30 via-primary/10 to-transparent blur-xl" />
@@ -148,7 +148,7 @@ export function SolutionSection() {
                     {outcomes.map((item, index) => (
                       <AnimationContainer
                         key={index}
-                        delay={0.4 + index * 0.08}
+                        delay={0.2 + index * 0.06}
                       >
                         <div className="group relative flex cursor-default items-start gap-4 rounded-2xl border border-transparent bg-muted/30 p-4 transition-all duration-300 hover:border-primary/20 hover:bg-muted/50">
                           {/* Icon */}
@@ -193,7 +193,7 @@ export function SolutionSection() {
             </AnimationContainer>
 
             {/* Floating elements */}
-            <AnimationContainer delay={0.9}>
+            <AnimationContainer delay={0.3}>
               <div className="absolute -right-4 -top-6 rotate-6 rounded-2xl bg-primary px-5 py-3 text-primary-foreground shadow-2xl shadow-primary/30 transition-transform duration-300 hover:rotate-3 sm:-right-8">
                 <p className="text-sm font-black">2026</p>
                 <p className="text-xs font-semibold opacity-80">São Paulo</p>

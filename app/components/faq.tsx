@@ -83,7 +83,7 @@ export function FAQ() {
               <AnimationContainer
                 key={index}
                 animation="fadeUp"
-                delay={index * 0.1}
+                delay={0.1 + index * 0.08}
               >
                 <AccordionItem
                   value={`item-${index}`}
