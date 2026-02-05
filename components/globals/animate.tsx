@@ -13,17 +13,17 @@ interface AnimationContainerProps {
 const getAnimationVariants = (animation: string) => {
   switch (animation) {
     case "fadeUp":
-      return { opacity: 0, y: 20 };
+      return { opacity: 0, y: 16 };
     case "fadeDown":
-      return { opacity: 0, y: -20 };
+      return { opacity: 0, y: -16 };
     case "fadeLeft":
-      return { opacity: 0, x: -20 };
+      return { opacity: 0, x: -16 };
     case "fadeRight":
-      return { opacity: 0, x: 20 };
+      return { opacity: 0, x: 16 };
     case "scaleUp":
-      return { opacity: 0, scale: 0.95 };
+      return { opacity: 0, scale: 0.97 };
     default:
-      return { opacity: 0, y: 20 };
+      return { opacity: 0, y: 16 };
   }
 };
 
@@ -43,10 +43,10 @@ const AnimationContainer = ({
         x: 0,
         scale: 1,
       }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.15 }}
       transition={{
-        duration: 0.55,
-        delay: delay * 0.15,
+        duration: 0.7,
+        delay: delay * 0.12,
         ease: [0.21, 0.61, 0.35, 1],
       }}
     >

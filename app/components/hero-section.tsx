@@ -89,22 +89,28 @@ export function HeroSection() {
                   </span>
                 </div>
                 <div className="space-y-6">
-                  {heroHighlights.map((item) => {
+                  {heroHighlights.map((item, index) => {
                     const Icon = item.icon;
                     return (
-                      <div key={item.title} className="flex items-start gap-4">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/15 text-primary">
-                          <Icon className="h-5 w-5" />
+                      <AnimationContainer
+                        key={item.title}
+                        animation="fadeUp"
+                        delay={0.15 + index * 0.08}
+                      >
+                        <div className="flex items-start gap-4">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/15 text-primary">
+                            <Icon className="h-5 w-5" />
+                          </div>
+                          <div>
+                            <p className="text-base font-semibold text-foreground">
+                              {item.title}
+                            </p>
+                            <p className="text-sm text-muted-foreground">
+                              {item.description}
+                            </p>
+                          </div>
                         </div>
-                        <div>
-                          <p className="text-base font-semibold text-foreground">
-                            {item.title}
-                          </p>
-                          <p className="text-sm text-muted-foreground">
-                            {item.description}
-                          </p>
-                        </div>
-                      </div>
+                      </AnimationContainer>
                     );
                   })}
                 </div>

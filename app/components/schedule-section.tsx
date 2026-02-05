@@ -141,20 +141,26 @@ export function ScheduleSection() {
                   </span>
                 </div>
                 <div className="space-y-10">
-                  {day.items.map((item) => (
-                    <div key={item.time} className="group flex gap-6">
-                      <div className="pt-1 text-xl font-black text-primary transition-transform group-hover:scale-110">
-                        {item.time}
+                  {day.items.map((item, itemIndex) => (
+                    <AnimationContainer
+                      key={item.time}
+                      animation="fadeUp"
+                      delay={0.15 + itemIndex * 0.08}
+                    >
+                      <div className="group flex gap-6">
+                        <div className="pt-1 text-xl font-black text-primary transition-transform group-hover:scale-110">
+                          {item.time}
+                        </div>
+                        <div>
+                          <h4 className="mb-2 text-lg font-bold text-foreground">
+                            {item.title}
+                          </h4>
+                          <p className="text-muted-foreground text-xs">
+                            {item.description}
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <h4 className="mb-2 text-lg font-bold text-foreground">
-                          {item.title}
-                        </h4>
-                        <p className="text-muted-foreground text-xs">
-                          {item.description}
-                        </p>
-                      </div>
-                    </div>
+                    </AnimationContainer>
                   ))}
                 </div>
               </div>
