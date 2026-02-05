@@ -46,7 +46,7 @@ const painPoints = [
 
 export function AboutSection() {
   return (
-    <section id="about" className="bg-background py-24 scroll-mt-28">
+    <section id="about" className="bg-background py-20 scroll-mt-28">
       <Wrapper>
         <AnimationContainer animation="fadeUp" delay={0}>
           <div className="mx-auto mb-16 max-w-3xl text-center sm:ml-auto sm:mr-0 sm:text-right">

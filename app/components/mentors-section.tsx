@@ -31,7 +31,7 @@ const mentors = [
 
 export function MentorsSection() {
   return (
-    <section id="mentors" className="bg-background py-24 scroll-mt-28">
+    <section id="mentors" className="bg-background py-20 scroll-mt-28">
       <Wrapper>
         <AnimationContainer animation="fadeUp" delay={0}>
           <div className="mx-auto mb-12 max-w-3xl text-center md:mb-16 sm:mx-0 sm:text-left">

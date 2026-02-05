@@ -28,14 +28,12 @@ const pillars = [
   },
   {
     title: "Se tornar Nutri Digital, criando produtos que vendem",
-    description:
-      "Estruture programas escaláveis e desejados pelo seu público.",
+    description: "Estruture programas escaláveis e desejados pelo seu público.",
     icon: Laptop,
   },
   {
     title: "Construção de comunidade e audiência qualificada",
-    description:
-      "Atraia e retenha pessoas que compram e indicam seu trabalho.",
+    description: "Atraia e retenha pessoas que compram e indicam seu trabalho.",
     icon: Users,
   },
   {
@@ -52,8 +50,7 @@ const pillars = [
   },
   {
     title: "Como se tornar referência na Nutrição",
-    description:
-      "Construa autoridade com conteúdo, prova e consistência.",
+    description: "Construa autoridade com conteúdo, prova e consistência.",
     icon: Award,
   },
   {
@@ -66,7 +63,7 @@ const pillars = [
 
 export function BenefitsSection() {
   return (
-    <section id="benefits" className="bg-secondary/40 py-24 scroll-mt-28">
+    <section id="benefits" className="bg-secondary/40 py-20 scroll-mt-28">
       <Wrapper>
         <div className="mb-16 space-y-6">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">

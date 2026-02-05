@@ -7,7 +7,7 @@ import { AnimatedButton } from "@/components/ui/animate-button";
 
 export function FinalCtaSection() {
   return (
-    <section className="relative overflow-hidden bg-background py-24">
+    <section className="relative overflow-hidden bg-background py-20">
       <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-primary/10 blur-[120px]" />
       <div className="absolute bottom-0 left-0 h-64 w-64 rounded-full bg-primary/5 blur-[80px]" />
       <Wrapper className="relative z-10">

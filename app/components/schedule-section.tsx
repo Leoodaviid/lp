@@ -96,7 +96,7 @@ const schedule = [
 
 export function ScheduleSection() {
   return (
-    <section id="schedule" className="bg-secondary/40 py-24 scroll-mt-28">
+    <section id="schedule" className="bg-secondary/40 py-20 scroll-mt-28">
       <Wrapper>
         <AnimationContainer animation="fadeUp" delay={0}>
           <div className="mx-auto mb-16 max-w-3xl text-center sm:ml-auto sm:mr-0 sm:text-right">
@@ -147,10 +147,10 @@ export function ScheduleSection() {
                         {item.time}
                       </div>
                       <div>
-                        <h4 className="mb-2 text-xl font-bold text-foreground">
+                        <h4 className="mb-2 text-lg font-bold text-foreground">
                           {item.title}
                         </h4>
-                        <p className="text-muted-foreground">
+                        <p className="text-muted-foreground text-xs">
                           {item.description}
                         </p>
                       </div>

@@ -45,9 +45,9 @@ export function SiteHeader() {
             href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0"
             target="_blank"
             rel="noreferrer"
-            className="rounded-full bg-primary px-6 py-2 text-sm font-extrabold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:brightness-110"
+            className="bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full animate-pulse"
           >
-            GARANTIR VAGA
+            VAGAS LIMITADAS
           </a>
         </div>
       </Wrapper>

@@ -43,14 +43,20 @@ const outcomes = [
 ];
 
 const differentials = [
-  { text: "Não é congresso", icon: "✕" },
-  { text: "Não é palestra rasa", icon: "✕" },
-  { text: "É transformação real", icon: "✓" },
+  { text: "Não é congresso.", icon: "✕" },
+  { text: "Não é palestra rasa.", icon: "✕" },
+];
+
+const formationHighlights = [
+  "É formação prática",
+  "mentalidade",
+  "posicionamento",
+  "negócios.",
 ];
 
 export function SolutionSection() {
   return (
-    <section className="relative overflow-hidden bg-background py-32">
+    <section className="relative overflow-hidden bg-background py-8">
       <div
         className="absolute inset-0 opacity-[0.015]"
         style={{
@@ -86,38 +92,37 @@ export function SolutionSection() {
 
             {/* Differentials */}
             <AnimationContainer delay={0.4}>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 -mb-4">
                 {differentials.map((item, index) => (
-                  <div
+                  <p
                     key={index}
-                    className={`flex items-center gap-2.5 rounded-2xl border px-5 py-3 backdrop-blur-sm transition-all duration-300 ${
-                      index === 2
-                        ? "border-primary/40 bg-primary/10 text-primary"
-                        : "border-border bg-card/50 text-muted-foreground"
-                    }`}
+                    className="text-xl font-bold text-muted-foreground line-through"
                   >
-                    <span
-                      className={`text-sm font-bold ${
-                        index === 2 ? "text-primary" : "text-muted-foreground"
-                      }`}
-                    >
-                      {item.icon}
-                    </span>
-                    <span className="text-sm font-medium">{item.text}</span>
-                  </div>
+                    {item.text}
+                  </p>
                 ))}
               </div>
             </AnimationContainer>
 
-            <AnimationContainer delay={0.5}>
-              <div className="pt-2 space-y-6">
-                <p className="bg-linear-to-r from-primary to-primary/60 bg-clip-text text-xl font-semibold text-transparent">
-                  Formação prática + mentalidade + posicionamento + negócios.
-                </p>
-
-                <AnimatedButton href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0" />
-              </div>
-            </AnimationContainer>
+            <div className="flex flex-col items-center gap-2 text-center sm:items-start sm:text-left">
+              {formationHighlights.map((item, index) => (
+                <AnimationContainer key={item} delay={0.5 + index * 0.12}>
+                  <p className="text-2xl font-semibold text-primary leading-tight">
+                    {item}
+                    {index < formationHighlights.length - 1 ? " +" : ""}
+                  </p>
+                </AnimationContainer>
+              ))}
+              <AnimationContainer
+                delay={0.5 + formationHighlights.length * 0.12}
+                className="mt-4"
+              >
+                <AnimatedButton
+                  title="Quero minha vaga agora"
+                  href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0"
+                />
+              </AnimationContainer>
+            </div>
           </div>
 
           {/* Right Column - Outcomes Card */}

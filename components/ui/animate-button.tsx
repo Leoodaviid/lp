@@ -6,10 +6,12 @@ import RocketIcon from "./rocket-icon";
 
 interface AnimatedButtonProps {
   href?: string;
+  title?: string;
 }
 
 export function AnimatedButton({
   href = "/auth/register",
+  title = "Garantir minha vaga",
 }: AnimatedButtonProps) {
   const glow1Ref = useRef<HTMLDivElement>(null);
   const glow2Ref = useRef<HTMLElement | null>(null);
@@ -91,7 +93,7 @@ export function AnimatedButton({
         }
       >
         <span className="z-5 flex items-center self-center whitespace-nowrap text-black">
-          Garantir minha vaga
+          {title}
           <RocketIcon ref={iconRef} className="ml-2 mt-1 size-4" />
         </span>
       </Link>

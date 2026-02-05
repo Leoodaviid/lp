@@ -45,7 +45,7 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="py-24 bg-secondary/30 scroll-mt-28">
+    <section id="faq" className="py-20 bg-secondary/30 scroll-mt-28">
       <Wrapper>
         <AnimationContainer animation="fadeUp" delay={0}>
           <div className="mb-6 text-center sm:text-left">

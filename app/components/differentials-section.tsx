@@ -2,6 +2,7 @@
 
 import AnimationContainer from "@/components/globals/animate";
 import Wrapper from "@/components/globals/wrapper";
+import { AnimatedButton } from "@/components/ui/animate-button";
 import {
   Lightbulb,
   TrendingUp,
@@ -63,7 +64,7 @@ const differentials = [
 
 export function DifferentialsSection() {
   return (
-    <section className="relative overflow-hidden bg-background py-24 md:py-32">
+    <section className="relative overflow-hidden bg-background py-20 md:py-32">
       <Wrapper className="relative z-10">
         {/* Header */}
         <AnimationContainer delay={0.1}>
@@ -242,18 +243,13 @@ export function DifferentialsSection() {
                   </span>
                 </p>
 
-                <button
-                  type="button"
-                  className="group/btn relative inline-flex items-center gap-3 rounded-full bg-linear-to-r from-primary via-primary/90 to-primary/80 px-10 py-5 text-lg font-bold text-primary-foreground transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/30 active:scale-[0.98]"
-                >
-                  <span>Quero fazer parte</span>
-                  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover/btn:translate-x-1" />
-
-                  {/* Shine effect */}
-                  <div className="absolute inset-0 rounded-full overflow-hidden">
-                    <div className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover/btn:translate-x-full" />
-                  </div>
-                </button>
+                <div className="flex justify-center">
+                  {" "}
+                  <AnimatedButton
+                    title="Quero ser um Nutri Expert"
+                    href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0"
+                  />
+                </div>
               </div>
             </div>
           </div>
