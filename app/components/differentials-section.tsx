@@ -3,6 +3,7 @@
 import AnimationContainer from "@/components/globals/animate";
 import Wrapper from "@/components/globals/wrapper";
 import { AnimatedButton } from "@/components/ui/animate-button";
+import GitHubStarsAnimation from "@/components/smoothui/components/github-stars-animation";
 import {
   Lightbulb,
   TrendingUp,
@@ -220,17 +221,15 @@ export function DifferentialsSection() {
               <div className="absolute inset-0 rounded-3xl bg-linear-to-r from-primary/15 via-primary/5 to-primary/10 blur-2xl" />
 
               <div className="relative rounded-2xl border border-border/60 bg-linear-to-b from-card/90 to-card/70 p-8 text-center md:p-10">
-                <div className="flex items-center justify-center gap-3 mb-4">
-                  <div className="flex -space-x-2">
-                    {[...Array(4)].map((_, i) => (
-                      <div
-                        key={i}
-                        className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-background bg-linear-to-br from-primary to-primary/80 text-xs font-bold text-primary-foreground"
-                      >
-                        {String.fromCharCode(65 + i)}
-                      </div>
-                    ))}
-                  </div>
+                <div className="mb-4 flex items-center justify-center gap-3">
+                  <GitHubStarsAnimation
+                    owner="educlopez"
+                    repo="smoothui"
+                    maxAvatars={4}
+                    showAvatars
+                    className="text-primary"
+                    countClassName="text-primary"
+                  />
                   <span className="text-sm text-muted-foreground">
                     +500 nutricionistas
                   </span>

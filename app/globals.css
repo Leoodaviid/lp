@@ -10,20 +10,20 @@
   --card-foreground: #f5f5f5;
   --popover: #141414;
   --popover-foreground: #f5f5f5;
-  --primary: #d4af37;
+  --primary: #b68b2e;
   --primary-foreground: #0b0b0b;
   --secondary: #1a1a1a;
   --secondary-foreground: #f5f5f5;
   --muted: #1a1a1a;
   --muted-foreground: #a3a3a3;
-  --accent: #d4af37;
+  --accent: #b68b2e;
   --accent-foreground: #0b0b0b;
   --destructive: #ef4444;
   --destructive-foreground: #f5f5f5;
   --border: #2a2a2a;
   --input: #1a1a1a;
-  --ring: #d4af37;
-  --chart-1: #d4af37;
+  --ring: #b68b2e;
+  --chart-1: #b68b2e;
   --chart-2: #b8860b;
   --chart-3: #ffd700;
   --chart-4: #daa520;
@@ -31,12 +31,12 @@
   --radius: 1rem;
   --sidebar: #0b0b0b;
   --sidebar-foreground: #f5f5f5;
-  --sidebar-primary: #d4af37;
+  --sidebar-primary: #b68b2e;
   --sidebar-primary-foreground: #0b0b0b;
   --sidebar-accent: #1a1a1a;
   --sidebar-accent-foreground: #f5f5f5;
   --sidebar-border: #2a2a2a;
-  --sidebar-ring: #d4af37;
+  --sidebar-ring: #b68b2e;
 }
 
 @theme inline {
@@ -105,8 +105,8 @@
   background: linear-gradient(
     to right,
     transparent 30%,
-    #d4af37 80%,
-    #b8860b 95%
+    #b68b2e 80%,
+    #9c7a2f 95%
   );
   width: 108%;
   height: 125%;
@@ -127,8 +127,8 @@
   background: linear-gradient(
     to left,
     transparent 30%,
-    #d4af37 80%,
-    #b8860b 95%
+    #b68b2e 80%,
+    #9c7a2f 95%
   );
   width: 108%;
   height: 125%;
@@ -148,8 +148,8 @@
     43.3% 44.23% at 50% 49.51%,
     #fff6d5 29%,
     #f4e3a1 48.5%,
-    #d4af374d 60.71%,
-    #d4af3700 100%
+    #b68b2e4d 60.71%,
+    #b68b2e00 100%
   );
   filter: blur(5px);
   width: 300px;
