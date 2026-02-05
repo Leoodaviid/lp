@@ -11,6 +11,7 @@ import { ScheduleSection } from "./components/schedule-section";
 import { SiteFooter } from "./components/site-footer";
 import { SiteHeader } from "./components/site-header";
 import { UrgencyBanner } from "./components/urgency-banner";
+import { EventGallery } from "./components/event-gallery";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <MentorsSection />
       <ScheduleSection />
       <DifferentialsSection />
+      <EventGallery />
       <FAQ />
       <LocationSection />
       <FinalCtaSection />

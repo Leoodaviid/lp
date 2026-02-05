@@ -47,18 +47,37 @@ export function FAQ() {
   return (
     <section id="faq" className="py-24 bg-secondary/30 scroll-mt-28">
       <Wrapper>
-        <div className="mx-auto max-w-3xl">
-          <AnimationContainer animation="fadeUp" delay={0}>
-            <div className="text-center mb-12">
-              <h2 className="mb-4 text-4xl font-black text-foreground lg:text-5xl">
-                Perguntas <span className="text-primary">frequentes</span>
-              </h2>
-              <p className="text-muted-foreground">
-                Tire suas dúvidas sobre o evento e garanta sua participação
-              </p>
-            </div>
-          </AnimationContainer>
+        <AnimationContainer animation="fadeUp" delay={0}>
+          <div className="mb-6 text-center sm:text-left">
+            <h2 className="text-4xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+              Perguntas{" "}
+              <span className="relative inline-block">
+                <span className="text-primary">frequentes</span>
+                <svg
+                  className="absolute -bottom-2 left-0 h-3 w-full text-primary md:-bottom-3 md:h-4"
+                  viewBox="0 0 200 12"
+                  fill="none"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M2 8.5C50 2 150 2 198 8.5"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    className="animate-draw"
+                  />
+                </svg>
+              </span>
+            </h2>
+          </div>
+          <div className="mx-auto mb-12 max-w-2xl text-center">
+            <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
+              Tire suas dúvidas sobre o evento e garanta sua participação
+            </p>
+          </div>
+        </AnimationContainer>
 
+        <div className="mx-auto max-w-3xl">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
               <AnimationContainer

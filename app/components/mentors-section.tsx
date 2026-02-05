@@ -34,9 +34,28 @@ export function MentorsSection() {
     <section id="mentors" className="bg-background py-24 scroll-mt-28">
       <Wrapper>
         <AnimationContainer animation="fadeUp" delay={0}>
-          <h2 className="mb-20 text-center text-4xl font-black text-foreground lg:text-5xl">
-            Mentores da sua jornada
-          </h2>
+          <div className="mx-auto mb-12 max-w-3xl text-center md:mb-16 sm:mx-0 sm:text-left">
+            <h2 className="text-4xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+              Mentores da sua{" "}
+              <span className="relative inline-block">
+                <span className="text-primary">jornada</span>
+                <svg
+                  className="absolute -bottom-2 left-0 h-3 w-full text-primary md:-bottom-3 md:h-4"
+                  viewBox="0 0 200 12"
+                  fill="none"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M2 8.5C50 2 150 2 198 8.5"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    className="animate-draw"
+                  />
+                </svg>
+              </span>
+            </h2>
+          </div>
         </AnimationContainer>
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">

@@ -3,7 +3,7 @@
 import AnimationContainer from "@/components/globals/animate";
 import Wrapper from "@/components/globals/wrapper";
 import { AnimatedButton } from "@/components/ui/animate-button";
-import { CalendarDays, MapPin, Rocket, Users } from "lucide-react";
+import { CalendarDays, MapPin, Users } from "lucide-react";
 
 const heroHighlights = [
   {
@@ -50,7 +50,7 @@ export function HeroSection() {
               <h1 className="text-4xl font-black leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-7xl">
                 FORMAÇÃO <br />
                 NUTRI EXPERT <br />
-                <span className="text-primary">EXPERIENCE</span>
+                <span className="text-primary">EXPERIENCE</span> SP
               </h1>
             </AnimationContainer>
 

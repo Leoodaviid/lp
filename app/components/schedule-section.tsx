@@ -5,7 +5,7 @@ import Wrapper from "@/components/globals/wrapper";
 
 const schedule = [
   {
-    label: "DAY 1",
+    label: "Dia 1",
     date: "10 de Abril",
     items: [
       {
@@ -51,7 +51,7 @@ const schedule = [
     ],
   },
   {
-    label: "DAY 2",
+    label: "Dia 2",
     date: "11 de Abril",
     items: [
       {
@@ -71,7 +71,8 @@ const schedule = [
       },
       {
         time: "13:30",
-        title: "Se Tornando Referência na Nutrição – Palestrante Convidada (a revelar)",
+        title:
+          "Se Tornando Referência na Nutrição – Palestrante Convidada (a revelar)",
         description: "Autoridade e posicionamento no mercado.",
       },
       {
@@ -98,9 +99,28 @@ export function ScheduleSection() {
     <section id="schedule" className="bg-secondary/40 py-24 scroll-mt-28">
       <Wrapper>
         <AnimationContainer animation="fadeUp" delay={0}>
-          <h2 className="mb-16 text-4xl font-black text-foreground lg:text-5xl">
-            Programação Completa
-          </h2>
+          <div className="mx-auto mb-16 max-w-3xl text-center sm:ml-auto sm:mr-0 sm:text-right">
+            <h2 className="text-4xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+              Programação{" "}
+              <span className="relative inline-block">
+                <span className="text-primary">Completa</span>
+                <svg
+                  className="absolute -bottom-2 left-0 h-3 w-full text-primary md:-bottom-3 md:h-4"
+                  viewBox="0 0 200 12"
+                  fill="none"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M2 8.5C50 2 150 2 198 8.5"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    className="animate-draw"
+                  />
+                </svg>
+              </span>
+            </h2>
+          </div>
         </AnimationContainer>
 
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
@@ -109,8 +129,9 @@ export function ScheduleSection() {
               key={day.label}
               animation="fadeUp"
               delay={index * 0.3}
+              className="h-full"
             >
-              <div className="rounded-[2.5rem] border border-border bg-card p-8 shadow-xl lg:p-12">
+              <div className="h-full rounded-[2.5rem] border border-border bg-card p-8 shadow-xl lg:p-12">
                 <div className="mb-10 flex items-center justify-between border-b border-border pb-6">
                   <span className="text-2xl font-black text-foreground">
                     {day.label}

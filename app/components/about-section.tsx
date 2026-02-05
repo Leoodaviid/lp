@@ -30,13 +30,14 @@ const painPoints = [
     icon: ClipboardList,
   },
   {
-    title: "Vê outros nutris crescendo no digital enquanto você fica estagnada",
-    description:
-      "A sensação é de correr muito e não sair do lugar.",
+    title:
+      "Vê outros nutricionistas crescendo no digital enquanto você fica estagnada",
+    description: "A sensação é de correr muito e não sair do lugar.",
     icon: TrendingUp,
   },
   {
-    title: "Quer ser reconhecida como referência, mas não sabe como se posicionar",
+    title:
+      "Quer ser reconhecida como referência, mas não sabe como se posicionar",
     description:
       "Falta clareza para construir autoridade e atrair o público certo.",
     icon: Award,
@@ -48,13 +49,28 @@ export function AboutSection() {
     <section id="about" className="bg-background py-24 scroll-mt-28">
       <Wrapper>
         <AnimationContainer animation="fadeUp" delay={0}>
-          <div className="mx-auto mb-16 max-w-3xl text-center">
-            <h2 className="mb-6 text-4xl font-black text-foreground lg:text-5xl">
-              Se você é nutricionista e sente que:
+          <div className="mx-auto mb-16 max-w-3xl text-center sm:ml-auto sm:mr-0 sm:text-right">
+            <h2 className="mb-6 text-4xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+              Se você é{" "}
+              <span className="relative inline-block">
+                <span className="text-primary">nutricionista</span>
+                <svg
+                  className="absolute -bottom-2 left-0 h-3 w-full text-primary md:-bottom-3 md:h-4"
+                  viewBox="0 0 200 12"
+                  fill="none"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M2 8.5C50 2 150 2 198 8.5"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    className="animate-draw"
+                  />
+                </svg>
+              </span>{" "}
+              e sente que
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Essa formação foi criada exatamente para você.
-            </p>
           </div>
         </AnimationContainer>
 

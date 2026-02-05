@@ -68,7 +68,7 @@ export function AnimatedButton({
       ref={glow1Ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="glow1 relative w-fit overflow-visible rounded-full p-0 z-[1]"
+      className="glow1 relative w-fit overflow-visible rounded-full p-0 z-1"
       style={
         {
           outline: "4px solid #FFFFFF4F",
@@ -81,7 +81,7 @@ export function AnimatedButton({
         href={href}
         onMouseEnter={() => iconRef.current?.startAnimation()}
         onMouseLeave={() => iconRef.current?.stopAnimation()}
-        className={`glow2 relative z-5 flex h-auto w-full items-center justify-center gap-3 overflow-hidden rounded-full border-[3px] border-white bg-[#D1D1D1] px-12 py-6 text-xl font-black transition-[2s] md:w-auto ${
+        className={`glow2 relative z-5 flex h-auto w-full items-center justify-center gap-3 overflow-hidden rounded-full border-[3px] border-white bg-[#D1D1D1] px-6 py-2 text-xl font-semibold transition-[2s] md:w-auto ${
           isHovering ? "hovering" : ""
         }`}
         style={

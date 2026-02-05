@@ -7,12 +7,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import AnimationContainer from "@/components/globals/animate";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import Wrapper from "@/components/globals/wrapper";
 
 const galleryItems = [
   {
     title: "Networking de Alto Nível",
     description: "Conecte-se com nutricionistas de todo o Brasil",
-    image: "/images/DSC05613.JPG",
+    image: "/images/06467.jpg",
     icon: <Users className="h-4 w-4 text-primary" />,
     className: "md:col-span-2",
     content: () => {
@@ -36,7 +37,7 @@ const galleryItems = [
   {
     title: "Palestras Transformadoras",
     description: "Conteúdo estratégico e aplicável",
-    image: "/images/DSC05635.JPG",
+    image: "/images/09445.jpg",
     icon: <Mic2 className="h-4 w-4 text-primary" />,
     className: "",
     content: () => {
@@ -61,7 +62,7 @@ const galleryItems = [
   {
     title: "Experiência Única",
     description: "Momentos marcantes e inspiradores",
-    image: "/images/DSC05801.JPG",
+    image: "/images/06913.jpg",
     icon: <Sparkles className="h-4 w-4 text-primary" />,
     className: "",
     content: () => {
@@ -84,7 +85,7 @@ const galleryItems = [
   {
     title: "Aprendizado Prático",
     description: "Metodologia aplicável imediatamente",
-    image: "/images/DSC06209.JPG",
+    image: "/images/07082.jpg",
     icon: <Award className="h-4 w-4 text-primary" />,
     className: "md:col-span-2",
     content: () => {
@@ -109,7 +110,7 @@ const galleryItems = [
   {
     title: "Comunidade Forte",
     description: "Nutricionistas unidas pelo crescimento",
-    image: "/images/DSC06237.JPG",
+    image: "/images/07165.jpg",
     icon: <Heart className="h-4 w-4 text-primary" />,
     className: "",
     content: () => {
@@ -133,7 +134,7 @@ const galleryItems = [
   {
     title: "Transformação Real",
     description: "Resultados que mudam carreiras",
-    image: "/images/DSC06576.JPG",
+    image: "/images/00616.jpg",
     icon: <Camera className="h-4 w-4 text-primary" />,
     className: "",
     content: () => {
@@ -197,7 +198,7 @@ export function EventGallery() {
       </AnimatePresence>
       <AnimatePresence>
         {active ? (
-          <div className="fixed inset-0 grid place-items-center z-[100] p-4">
+          <div className="fixed inset-0 grid place-items-center z-100 p-4">
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
@@ -261,22 +262,40 @@ export function EventGallery() {
         ) : null}
       </AnimatePresence>
 
-      <section className="py-20 bg-background">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="bg-background py-20">
+        <Wrapper>
           <AnimationContainer animation="fadeUp" delay={0}>
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-balance mb-4">
-                Momentos das{" "}
-                <span className="text-primary">Edições Anteriores</span>
+            <div className="mb-6 text-center sm:text-right">
+              <h2 className="text-4xl font-black leading-tight tracking-tight text-foreground sm:w-full sm:text-5xl lg:text-6xl">
+                <span className="relative inline-block">
+                  <span className="text-primary">Momentos</span>
+                  <svg
+                    className="absolute -bottom-2 left-0 h-3 w-full text-primary md:-bottom-3 md:h-4"
+                    viewBox="0 0 200 12"
+                    fill="none"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      d="M2 8.5C50 2 150 2 198 8.5"
+                      stroke="currentColor"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      className="animate-draw"
+                    />
+                  </svg>
+                </span>{" "}
+                das Edições Anteriores
               </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
+            </div>
+            <div className="mx-auto mb-12 max-w-2xl text-center">
+              <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
                 Confira a energia e o clima transformador que você vai vivenciar
                 no evento
               </p>
             </div>
           </AnimationContainer>
 
-          <BentoGrid className="md:auto-rows-[20rem]">
+          <BentoGrid className="mx-0 w-full max-w-none md:auto-rows-[20rem]">
             {galleryItems.map((item, index) => (
               <AnimationContainer
                 key={index}
@@ -310,7 +329,7 @@ export function EventGallery() {
               </AnimationContainer>
             ))}
           </BentoGrid>
-        </div>
+        </Wrapper>
       </section>
     </>
   );

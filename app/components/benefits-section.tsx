@@ -68,22 +68,43 @@ export function BenefitsSection() {
   return (
     <section id="benefits" className="bg-secondary/40 py-24 scroll-mt-28">
       <Wrapper>
-        <div className="mb-16 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-          <AnimationContainer animation="fadeUp" delay={0}>
-            <div className="max-w-2xl">
-              <h2 className="mb-6 text-4xl font-black text-foreground lg:text-5xl">
-                O que você vai aprender
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Conteúdos estratégicos para transformar sua carreira em um
-                negócio de alto valor.
-              </p>
-            </div>
-          </AnimationContainer>
-          <AnimationContainer animation="fadeLeft" delay={1}>
-            <div className="hidden text-7xl font-black text-primary/20 lg:block">
-              CORE
-            </div>
+        <div className="mb-16 space-y-6">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <AnimationContainer animation="fadeLeft" delay={1}>
+              <div className="hidden text-7xl font-black text-primary/20 lg:block">
+                CORE
+              </div>
+            </AnimationContainer>
+            <AnimationContainer animation="fadeUp" delay={0}>
+              <div className="mx-auto max-w-2xl text-center sm:ml-auto sm:mr-0 sm:text-right">
+                <h2 className="mb-6 text-4xl font-black leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+                  O que você vai{" "}
+                  <span className="relative inline-block">
+                    <span className="text-primary">aprender</span>
+                    <svg
+                      className="absolute -bottom-2 left-0 h-3 w-full text-primary md:-bottom-3 md:h-4"
+                      viewBox="0 0 200 12"
+                      fill="none"
+                      preserveAspectRatio="none"
+                    >
+                      <path
+                        d="M2 8.5C50 2 150 2 198 8.5"
+                        stroke="currentColor"
+                        strokeWidth="3"
+                        strokeLinecap="round"
+                        className="animate-draw"
+                      />
+                    </svg>
+                  </span>
+                </h2>
+              </div>
+            </AnimationContainer>
+          </div>
+          <AnimationContainer animation="fadeUp" delay={0.2}>
+            <p className="mx-auto max-w-2xl text-center text-lg leading-relaxed text-muted-foreground sm:text-xl">
+              Conteúdos estratégicos para transformar sua carreira em um negócio
+              de alto valor.
+            </p>
           </AnimationContainer>
         </div>
 

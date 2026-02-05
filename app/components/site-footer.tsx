@@ -30,7 +30,7 @@ export function SiteFooter() {
           <AnimationContainer animation="fadeUp" delay={0}>
             <div className="md:col-span-2">
               <h3 className="mb-6 text-2xl font-black tracking-tight text-foreground">
-                NUTRI EXPERT
+                NUTRI EXPERT <span className="text-primary">EXPERIENCE</span> SP
               </h3>
               <p className="mb-8 max-w-sm text-muted-foreground">
                 A maior plataforma de educação em negócios e marketing para

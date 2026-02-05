@@ -16,8 +16,8 @@ export function SiteHeader() {
     <header className="fixed top-16 md:top-10 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <Wrapper className="flex h-16 items-center justify-between">
         <div className="flex items-center gap-8">
-          <h2 className="text-xl font-black tracking-tight text-foreground">
-            NUTRI EXPERT
+          <h2 className="text-xs md:text-xl font-black tracking-tight text-foreground">
+            NUTRI EXPERT <span className="text-primary">EXPERIENCE</span> SP
           </h2>
           <nav className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => (
@@ -45,7 +45,7 @@ export function SiteHeader() {
             href="https://api.whatsapp.com/send/?phone=558597526586&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+forma%C3%A7%C3%A3o+Nutri+Expert+SP&type=phone_number&app_absent=0"
             target="_blank"
             rel="noreferrer"
-            className="rounded-full bg-primary px-6 py-2.5 text-sm font-extrabold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:brightness-110"
+            className="rounded-full bg-primary px-6 py-2 text-sm font-extrabold text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:brightness-110"
           >
             GARANTIR VAGA
           </a>
