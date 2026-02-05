@@ -1,8 +1,7 @@
 "use client";
 import { CSSProperties, useRef, useState } from "react";
 import Link from "next/link";
-import type { AnimatedIconHandle } from "./types";
-import RocketIcon from "./rocket-icon";
+import { ArrowRight } from "lucide-react";
 
 interface AnimatedButtonProps {
   href?: string;
@@ -16,7 +15,6 @@ export function AnimatedButton({
   const glow1Ref = useRef<HTMLDivElement>(null);
   const glow2Ref = useRef<HTMLElement | null>(null);
   const timeoutIdRef = useRef<NodeJS.Timeout | null>(null);
-  const iconRef = useRef<AnimatedIconHandle | null>(null);
   const [isHovering, setIsHovering] = useState(false);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -56,8 +54,6 @@ export function AnimatedButton({
     if (!glow1 || !glow2Button) return;
 
     setIsHovering(false);
-    iconRef.current?.stopAnimation();
-
     timeoutIdRef.current = setTimeout(() => {
       glow1.style.setProperty("--before-opacity", "1");
       glow1.style.setProperty("--after-opacity", "0");
@@ -81,8 +77,6 @@ export function AnimatedButton({
     >
       <Link
         href={href}
-        onMouseEnter={() => iconRef.current?.startAnimation()}
-        onMouseLeave={() => iconRef.current?.stopAnimation()}
         className={`glow2 relative z-5 flex h-auto w-full items-center justify-center gap-3 overflow-hidden rounded-full border-[3px] border-white bg-[#D1D1D1] px-6 py-2 text-xl font-semibold transition-[2s] md:w-auto ${
           isHovering ? "hovering" : ""
         }`}
@@ -94,7 +88,7 @@ export function AnimatedButton({
       >
         <span className="z-5 flex items-center self-center whitespace-nowrap text-black">
           {title}
-          <RocketIcon ref={iconRef} className="ml-2 mt-1 size-4" />
+          <ArrowRight className="ml-2 mt-1 size-4" />
         </span>
       </Link>
     </div>
